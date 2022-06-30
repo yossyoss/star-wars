@@ -4,7 +4,6 @@ import "./Actors.css"
 import Loader from "../Loader/Loader"
 import List from "../../components/List/List"
 import Button from "../../components/Button/Button"
-
 import retrieveActors from "../../fetch/retrieve-actors"
 import getData from "../../utils/getData"
 import { Outlet } from "react-router-dom"

@@ -8,7 +8,6 @@ export default function List({ list, page, onEditClicked, onDeleteClicked }) {
       <li className=''>
         <h3>{page.toUpperCase()}</h3>
       </li>
-
       {list &&
         page === "films" &&
         list.map((film) => {

@@ -4,7 +4,6 @@ import List from "../List/List.js"
 import "./DetailsActor.css"
 import Loader from "../Loader/Loader"
 import udapatList from "../../utils/updateList"
-
 import retrieveFilms from "../../fetch/retrieve-films"
 import retrieveActors from "../../fetch/retrieve-actors"
 import Button from "../../components/Button/Button"

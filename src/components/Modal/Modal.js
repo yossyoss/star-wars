@@ -31,7 +31,6 @@ export default function Modal({
         (data) => data.url === editFormData.url
       )
       newForm.title = filmName
-      console.log(newArray)
     } else {
       newArray = [
         ...localStorageData,

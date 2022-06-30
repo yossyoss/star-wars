@@ -38,7 +38,11 @@ function useLocalStorage(key, initialValue) {
     }
   }
   const clearStorage = (key) => {
-    localStorage.removeItem(key)
+    try {
+      localStorage.removeItem(key)
+    } catch (error) {
+      console.log(error)
+    }
   }
   return [storedValue, setValue, getValue, clearStorage]
 }

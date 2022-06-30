@@ -4,7 +4,7 @@ import List from "../List/List.js"
 import "./DetailsActor.css"
 import Loader from "../Loader/Loader"
 import udapatList from "../../utils/updateList"
-import spinnerLight from "../../assets/spinner-light.svg"
+
 import retrieveFilms from "../../fetch/retrieve-films"
 import retrieveActors from "../../fetch/retrieve-actors"
 import Button from "../../components/Button/Button"
@@ -78,7 +78,7 @@ export default function DetailsActors({
   }
 
   if (loading) {
-    return <Loader spinner={spinnerLight} />
+    return <Loader />
   }
   return (
     <>

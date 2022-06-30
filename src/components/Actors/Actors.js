@@ -8,10 +8,9 @@ import Button from "../../components/Button/Button"
 import retrieveActors from "../../fetch/retrieve-actors"
 import getData from "../../utils/getData"
 import { Outlet } from "react-router-dom"
-import spinnerLight from "../../assets/spinner-light.svg"
 
 export default function Actors() {
-  const [actorsList, setActorsList] = useState([])
+  const [actorsList, setActorsList] = useState(null)
   const [page, setPage] = useState()
   const [count, setCount] = useState(0)
   const [loading, setLoading] = useState(false)
@@ -22,9 +21,9 @@ export default function Actors() {
       const res = await retrieveActors()
 
       setActorsList(res.results)
-      setLoading(false)
       setPage(res.next)
       setCount(res.count)
+      setLoading(false)
     }
     getActors()
   }, [])
@@ -41,7 +40,7 @@ export default function Actors() {
     window.scrollTo(0, 0)
   }
   if (loading) {
-    return <Loader spinner={spinnerLight} />
+    return <Loader />
   }
   return (
     <>

@@ -1,8 +1,21 @@
 .spinner {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  z-index: 999;
+  opacity: 1;
+  background: white;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
 }
 .loader {
   width: 30em;
   text-align: center;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

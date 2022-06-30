@@ -1,9 +1,9 @@
 import "./Loader.css"
-
+import spinnerLight from "../../assets/star-wars.svg"
 const Loader = ({ spinner }) => {
   return (
     <div className='loader'>
-      <img src={spinner} className={"spinner"} alt='loading...' />
+      <img src={spinnerLight} className={"spinner"} alt='loading...' />
     </div>
   )
 }

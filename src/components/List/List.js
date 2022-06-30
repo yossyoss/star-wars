@@ -15,7 +15,7 @@ export default function List({ list, page, onEditClicked, onDeleteClicked }) {
           if (film.deleted) return null
           let key = film.url
           return (
-            <li key={key} className='list-item'>
+            <li key={key} className='list-item films'>
               <h3 key={key} className=' list-film list-film-container'>
                 <div className='list-film content'>{film.title}</div>
                 <div

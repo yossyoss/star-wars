@@ -7,7 +7,6 @@
   padding: 1em;
   background-color: #151515;
   color: var(--white);
-  cursor: pointer;
   text-align: left;
 }
 
@@ -22,6 +21,9 @@
 .list-item:hover h3 {
   color: var(--gold-color);
 }
+.list-item.films:hover h3 {
+  color: var(--white);
+}
 ul.list.list-item-actor {
   border-right: 1px solid;
 }
@@ -30,6 +32,7 @@ ul.list.list-item-actor {
   grid-template-columns: 8fr 1fr 1fr;
 }
 .list-film.action {
+  cursor: pointer;
   color: var(--gold-color);
 }
 .list-film.action:hover {

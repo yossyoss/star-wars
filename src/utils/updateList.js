@@ -1,4 +1,5 @@
 const udapatList = (serverData, localStorageData) => {
+  if (!localStorageData) return serverData
   return serverData.map((film) => {
     let found = localStorageData.find((actorData) => film.url === actorData.url)
     if (!found) return film

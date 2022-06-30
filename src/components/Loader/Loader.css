@@ -1,0 +1,8 @@
+.spinner {
+  width: 200px;
+  height: 200px;
+}
+.loader {
+  width: 30em;
+  text-align: center;
+}

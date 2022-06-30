@@ -1,9 +1,8 @@
 import getData from "../utils/getData"
-
-let initialActorsUrl = "https://swapi.dev/api/people/"
+const initialActorsUrl = "https://swapi.dev/api/people/"
 
 const retrieveActors = async (actorId) => {
-  if (actorId) initialActorsUrl = `initialActorsUrl${actorId}`
+  if (actorId) return await getData(`${initialActorsUrl}${actorId}`)
   return await getData(initialActorsUrl)
 }
 
